@@ -58,17 +58,18 @@ Before running this project, make sure you have:
 
 Check versions:
 
+```
 terraform -v  
 aws --version  
-
+```
 ---
 
 # 🔐 Step 1 – Configure AWS CLI
 
 Run:
-
+```
 aws configure
-
+```
 Enter:
 
 - AWS Access Key
@@ -80,38 +81,39 @@ Enter:
 
 # 📂 Step 2 – Clone the Repository
 
+```
 git clone https://github.com/YOUR-USERNAME/custom-vpc-terraform.git
 
 cd custom-vpc-terraform
-
+```
 ---
 
 # ⚙ Step 3 – Initialize Terraform
-
+```
 terraform init
-
+```
 This downloads required AWS provider plugins.
 
 ---
 
 # 📋 Step 4 – Validate Code
-
+```
 terraform validate
-
+```
 ---
 
 # 🔎 Step 5 – Check Plan
-
+```
 terraform plan
-
+```
 This shows what Terraform will create.
 
 ---
 
 # 🚀 Step 6 – Deploy Infrastructure
-
+```
 terraform apply
-
+```
 Type:
 
 yes
@@ -143,9 +145,9 @@ ssh -i your-key.pem ubuntu@PUBLIC-IP
 # 🧹 Step 8 – Destroy Infrastructure (Important)
 
 To avoid AWS charges:
-
+```
 terraform destroy
-
+```
 Type:
 
 yes
